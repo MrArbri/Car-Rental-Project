@@ -1,0 +1,180 @@
+<div class="container">
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <div class="pt-2 pb-3" *ngFor="let val of CarModels">
+      <div class="card">
+        <img
+          src="{{ val.img }}"
+          class="card-img-top rounded"
+          alt="BMW 7 series"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ val.model }}</h5>
+          <p class="card-text">
+            {{ val.fuel }}
+          </p>
+
+          <p class="card-text">{{ val.year }}</p>
+          <a href="#" class="btn btn-primary">Rent BMW 7 series</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div id="result" class="row row-cols-3">
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://cdn.motor1.com/images/mgl/8QMwo/s1/2022-audi-a8-l.webp"
+          class="card-img-top rounded"
+          alt="Audi A8"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent Audi</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent Audi A8</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://www.topgear.com/sites/default/files/2023/08/P90492179_highRes_bmw-i7-xdrive60-m-sp%20%281%29.jpg"
+          class="card-img-top rounded"
+          alt="BMW 7 series"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent BMW</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent BMW 7 series</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/e27b2279-28f5-4cfe-b012-f6d5ebf0a44a/Mercedes%20S-Class%202020%20%2810%29.jpg"
+          class="card-img-top rounded"
+          alt="Mercedes S class"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent Mercedes</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent Mercedes S class</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://images.carexpert.com.au/crop/1200/630/app/uploads/2022/07/volkswagen-phaeton-d2-concept-1.jpg"
+          class="card-img-top rounded"
+          alt="VW Phaeton"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent VW Phaeton</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://www.topgear.com/sites/default/files/cars-car/carousel/2020/10/p90404907_highres_bmw-m550i_0.jpg"
+          class="card-img-top rounded"
+          alt="BMW 5 series"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent BMW 5 series</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://i.i-sgcm.com/new_cars/cars/12423/12423_m.jpg"
+          class="card-img-top rounded"
+          alt="Audi A6"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://cdni.autocarindia.com/ExtraImages/20230426012449_19.jpg"
+          class="card-img-top rounded"
+          alt="Mercedes E class"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://cdn-img.thethao247.vn/upload/2uannh.92/2019/08/16/bang-gia-xe-volkswagen-2019.jpg"
+          class="card-img-top rounded"
+          alt="VW Passat"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Rent VW Passat</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2 pb-3">
+      <div class="card">
+        <img
+          src="https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg"
+          class="card-img-top rounded"
+          alt="Rent Mercedes C class"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Rent now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

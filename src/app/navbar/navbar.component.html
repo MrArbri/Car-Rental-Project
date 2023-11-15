@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand p-2"
+      href="/"
+      [ngStyle]="{
+        border: amount >= 50 ? '3px solid black' : '',
+        color: amount >= 150 ? 'red' : 'black'
+      }"
+      ><b>Rent a Car</b></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item p-2">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            [ngStyle]="{
+              border: amount >= 70 ? '3px solid black' : '',
+              color: amount >= 130 ? 'red' : 'black'
+            }"
+            href="/"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item p-2">
+          <a
+            class="nav-link"
+            href="#"
+            [ngStyle]="{
+              border: amount >= 90 ? '3px solid black' : '',
+              color: amount >= 110 ? 'red' : 'black'
+            }"
+            >About us</a
+          >
+        </li>
+        <li class="nav-item dropdown p-2">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Brands
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Mercedes</a></li>
+            <li><a class="dropdown-item" href="#">BMW</a></li>
+            <li><a class="dropdown-item" href="#">VolksWagen</a></li>
+            <li><a class="dropdown-item" href="#">Audi</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Electric cars</a></li>
+          </ul>
+        </li>
+        <li class="nav-item p-2">
+          <button class="btn btn-primary ms-5 me-5" (click)="donateMoney()">
+            Donate
+            {{ amount }}€
+          </button>
+        </li>
+        <h3 class="p-2" *ngIf="amount >= 200">You are a VIP!</h3>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          [style.background-color]="amount >= 100 ? 'red' : 'green'"
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- If else in Angular option 1
+
+  <p[style.background-color]="amount >= 100 ? 'red' : 'green'"></p>
+
+      Option 2
+
+  <h3 *ngIf="amount >= 200">You are a VIP!</h3>
+
+      Option 3
+
+  <button [ngStyle]="{
+              border: amount >= 90 ? '3px solid black' : '',
+              color: amount >= 110 ? 'red' : 'black'
+            }"></button>
+
+-->
