@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a
       class="navbar-brand p-2"
       href="#"
       [ngStyle]="{
-        border: amount >= 50 ? '3px solid black' : '',
-        color: amount >= 150 ? 'red' : 'black'
+        border: amount >= 50 ? '3px solid white' : '',
+        color: amount >= 150 ? 'red' : 'white'
       }"
       ><b>Rent a Car</b></a
     >
@@ -27,8 +27,8 @@
             class="nav-link active"
             aria-current="page"
             [ngStyle]="{
-              border: amount >= 70 ? '3px solid black' : '',
-              color: amount >= 130 ? 'red' : 'black'
+              border: amount >= 70 ? '3px solid white' : '',
+              color: amount >= 130 ? 'red' : 'white'
             }"
             href="#"
             >Home</a
@@ -39,15 +39,15 @@
             class="nav-link"
             href="#"
             [ngStyle]="{
-              border: amount >= 90 ? '3px solid black' : '',
-              color: amount >= 110 ? 'red' : 'black'
+              border: amount >= 90 ? '3px solid white' : '',
+              color: amount >= 110 ? 'red' : 'white'
             }"
             >About us</a
           >
         </li>
         <li class="nav-item dropdown p-2">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link text-white dropdown-toggle"
             href="#"
             role="button"
             data-bs-toggle="dropdown"
@@ -56,12 +56,12 @@
             Brands
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Mercedes</a></li>
-            <li><a class="dropdown-item" href="#">BMW</a></li>
-            <li><a class="dropdown-item" href="#">VolksWagen</a></li>
-            <li><a class="dropdown-item" href="#">Audi</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Mercedes</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">BMW</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">VolksWagen</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Audi</a></li>
             <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Electric cars</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Electric cars</a></li>
           </ul>
         </li>
         <li class="nav-item p-2">
