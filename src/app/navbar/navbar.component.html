@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark mb-3">
   <div class="container-fluid">
     <a
       class="navbar-brand p-2"
@@ -7,10 +7,11 @@
         border: amount >= 50 ? '3px solid white' : '',
         color: amount >= 150 ? 'red' : 'white'
       }"
-      ><b>Rent a Car</b></a
     >
+      <b>Rent a Car</b>
+    </a>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler bg-white"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -70,7 +71,7 @@
             {{ amount }}€
           </button>
         </li>
-        <h3 class="p-2" *ngIf="amount >= 200">You are a VIP!</h3>
+        <h3 class="p-2 text-white" *ngIf="amount >= 200">You are a VIP!</h3>
       </ul>
       <form class="d-flex" role="search">
         <input
